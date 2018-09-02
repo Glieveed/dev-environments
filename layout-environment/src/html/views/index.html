@@ -1,0 +1,14 @@
+<% var data = {
+    <!-- Page info -->
+    title: 'Demo title',
+
+    <!-- Page paths -->
+    favicon_path: 'favicon/favicon.ico',
+    css_bundle_path: 'css/style.bundle.css',
+    js_bundle_path: 'js/bundle.js'     
+}; %>
+<%= _.template(require('./../includes/top.html'))(data) %>
+  
+    <p>Hello, World!</p>
+  
+<%= _.template(require('./../includes/bottom.html'))(data) %>
